@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3b444f;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+/* -------------------------------------------- HEADER  --------------------------------------------*/
+
+.header__main {
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+
+}
+
+.header__main_container {
+    box-shadow: none;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header__main {
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ebf0f7;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header__main_nav {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    z-index: 10;
+}
+
+.header__main_nav-logo {
+    padding-top: 0.2505rem;
+    padding-bottom: 0.2505rem;
+    margin-right: 1.875rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #297cbb;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header_main__navBar {
+    display: flex;
+    flex-basis: auto;
+    position: relative;
+    flex-grow: 1;
+    order: 0;
+}
+
+
+.header_main__navBar-ul {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: row;
+    margin-left: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+}
+
+
+.header_main__navBar-li-a {
+    display: block;
+    padding-left: 0;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1rem;
+    color: #3b444f;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+
+
+/* -------------------------------------------- MAIN  --------------------------------------------*/
+
+#contenedor_hero{
+    position: relative;
+    display: block;
+}
+
+.hero{
+    display: block;
+    background-image: url(https://i4.visitchile.com/img/Banner/16/main.png);
+    z-index: 2;
+    min-height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 12.5rem !important;
+    text-align: center !important;
+    position: relative !important;
+    box-sizing: border-box;
+}
+
+.hero__container_background{
+    display: block;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+    inset: 0px;
+    pointer-events: none;
+    background-image: url(https://img.youtube.com/vi/zqc3p6aqJG8/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100% !important;
+}
+
+.hero__container__background_video{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    opacity: 1;
+    width: 2103px;
+    height: 1182.94px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
