@@ -114,12 +114,16 @@ body {
 
 /* -------------------------------------------- MAIN  --------------------------------------------*/
 
-#contenedor_hero{
+
+/* HERO */
+
+
+#contenedor_hero {
     position: relative;
     display: block;
 }
 
-.hero{
+.hero {
     display: block;
     background-image: url(https://i4.visitchile.com/img/Banner/16/main.png);
     z-index: 2;
@@ -133,7 +137,7 @@ body {
     box-sizing: border-box;
 }
 
-.hero__container_background{
+.hero__container_background {
     display: block;
     width: 100%;
     z-index: 0;
@@ -148,7 +152,7 @@ body {
     height: 100% !important;
 }
 
-.hero__container__background_video{
+.hero__container__background_video {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -161,3 +165,46 @@ body {
     border-image: initial;
 }
 
+.container {
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.hero__container_title{
+    display: block;
+    margin-top: 1.5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.hero__container_h1{
+    display: block;
+    font-weight: 500 !important;
+    font-size: 3.75rem;
+    color: #fff !important;
+    position: relative !important;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.hero__container_options{
+    display: block;
+    padding-bottom: 2.5rem !important;
+    padding-top: 1rem !important;
+
+}
+
+.hero__container_options_ul{
+
+}
