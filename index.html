@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <title>Chile Tours</title>
   </head>
   <body>
@@ -40,12 +44,11 @@
     <main id="contenedor_hero">
       <div class="hero">
         <div
-        class="hero__container_background"
+          class="hero__container_background"
           data-ytbg-play-button="false"
           data-vbg-loop="true"
           data-vbg-muted="true"
           data-youtube="https://www.youtube.com/watch?v=zqc3p6aqJG8"
-         
         >
           <iframe
             class="hero__container__background_video"
@@ -56,68 +59,53 @@
         </div>
         <div class="container">
           <div class="hero__container_title">
-            <h1  class="hero__container_h1">VIVE LA ENERGÍA DE CHILE!</h1>
+            <h1 class="hero__container_h1">VIVE LA ENERGÍA DE CHILE!</h1>
             <p></p>
           </div>
           <div class="hero__container_options">
             <ul class="hero__container_options_ul">
-              <li class="hero__container_options_ul-li"></li>
-              <li class="hero__container_options_ul-li"></li>
-              <li class="hero__container_options_ul-li"></li>
+              <li class="hero__container_options_ul-li">
+                <a class="hero__container_options_ul-li-a" href="#">
+                  <div class="hero__container_a">
+                    <figure class="hero__container_a_fig">
+                      <i
+                        class="uil uil-plane-departure hero__container_a_i"
+                      ></i>
+                    </figure>
+                    <span class="hero__conainter_a_span">Tours</span>
+                  </div>
+                </a>
+              </li>
+              <li class="hero__container_options_ul-li">
+                <a class="hero__container_options_ul-li-a" href="#">
+                  <div class="hero__container_a">
+                    <figure class="hero__container_a_fig">
+                      <i class="uil uil-swimmer hero__container_a_i"></i>
+                    </figure>
+                    <span class="hero__conainter_a_span">Actividades</span>
+                  </div>
+                </a>
+              </li>
+              <li class="hero__container_options_ul-li">
+                <a class="hero__container_options_ul-li-a" href="#">
+                  <div class="hero__container_a">
+                    <figure class="hero__container_a_fig">
+                      <i class="uil uil-building hero__container_a_i"></i>
+                    </figure>
+                    <span class="hero__conainter_a_span">Hotel</span>
+                  </div>
+                </a>
+              </li>
             </ul>
             <div class="hero__container_search">
               <div class="hero__container_search_tab">
-                <div class="hero__container_search_tab-body">
-                  <form action="hero__container_search_form">
-                    <div class="hero__container_search_form-row">
-                      <div class="hero__container_search_form-row-col">
-                        <span class="hero__container_search_span"></span>
-                        <div class="hero__container_search_span_dropdown">
-                          <select
-                            name="hero__container_search_span_select"
-                            id=""
-                          >
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                            <option
-                              class="hero__container_search_option-dest"
-                              value=""
-                            ></option>
-                          </select>
-                          <button class="hero__container_search_button-drop">
-                            <div
-                              class="hero__container_search_button-drop-filter"
-                            >
-                              <div>
-                                <div
-                                  class="hero__container_search_button-drop-filter-inner"
-                                ></div>
-                              </div>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                <label class="hero__container_search_label" for="destinos">destinos</label>
+                <!-- beforebegin -->
+                <select class="hero__container_search_select" name="destinos" id="destinos">
+                  <!-- afterbegin -->
+                  <!-- beforeend -->
+                </select>
+                <!-- afterend -->
               </div>
             </div>
           </div>
