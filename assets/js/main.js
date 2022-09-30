@@ -1,32 +1,31 @@
-// const destinos = ['Santiago', 'Viña', 'San Felipe'];
-// function myFunction() {
-//   var x = document.getElementById("mySelect");
-//   destinos.forEach((a) => {
-//     var option = document.createElement("option");
-//     option.text = a;
-//     option.className = "hola";
-//     x.add(option);
-//   })
-// }
-// myFunction();
 
-function draw_destinos() {
-    let allDestinos = [
-        "Santiago",
-        "Viña del mar",
-        "San Felipe",
-        "Antofagasta",
-        "Arica",
-    ]
-    for (let i = 0; i < allDestinos.length; i++) {
-        InsertDestino(allDestinos[i])
-    }
-}
+const dropDowns = document.querySelectorAll(".dropdown");
+dropDowns.forEach((dropDown) => {
+    const select = dropDown.querySelector(".select");
+    const arrow = dropDown.querySelector(".arrow");
+    const menu = dropDown.querySelector(".menu");
+    const menuItems = dropDown.querySelectorAll(".menu li");
+    const selectTitle = dropDown.querySelector(".select-title");
 
-function InsertDestino(destinosName) {
-    const selectElemend = document.getElementById("destinos") //
-    let htmlToInser = `<option> ${destinosName} </option>`
-    selectElemend.insertAdjacentHTML("beforeend", htmlToInser)
-}
+    select.addEventListener("click", () => {
+        select.classList.toggle("select-clicked");
+        arrow.classList.toggle("arrow-rotate");
+        menu.classList.toggle("menu-open");
+    });
 
-draw_destinos()
+
+    menuItems.forEach((item) => {
+
+        item.addEventListener("click", () => {
+
+            selectTitle.innerText = item.innerText;
+            select.classList.remove("select-clicked");
+            arrow.classList.remove("arrow-rotate");
+            menu.classList.remove("menu-open");
+            menuItems.forEach((item) => {
+                item.classList.remove("active");
+            });
+            item.classList.add("active");
+        });
+    });
+});

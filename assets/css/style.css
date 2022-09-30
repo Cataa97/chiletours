@@ -277,46 +277,113 @@ body {
     margin-top: 0 !important;
 
 }
-
 .hero__container_search{
-    position: relative;
-    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
+}
+
+.hero__container_search-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 0 !important;
+    position: relative;
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+    border: 1px solid #e7eaf3;
     border-radius: 0.3125rem;
 }
 
-.hero__container_search_tab{
-    flex: 0 0 30.83333%;
-    max-width: 30.83333%;
-    margin-bottom: 0 !important;
+
+
+
+/*------------------------dropdown------------------------- */
+
+.dropdown {
     position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    min-width: 250px;
+    margin: 2rem;
 }
 
-.hero__container_search_label{
-    display: block !important;
-    color: #67747c !important;
-    font-weight: 400 !important;
-    text-align: left !important;
-    margin-bottom: 0 !important;
-
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    color: #3b444f;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.hero__container_search_select{
-    bottom: 0;
+/* class for javasctipt */
+.select-clicked {
+    border: 2px solid #26489a;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #fff;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+}
+
+.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    position: absolute;
+    display: none;
+    top: 3em;
     left: 50%;
-    display: block !important;
-    height: 100% !important;
-   
-    border-style:none ;
-    font-weight: 500 !important;
-    color: #297cbb !important;
-  
+    width: 100%;
+    padding: 5px 10px;
+    background: #fff;
+    color: #3b444f;
+    list-style: none;
+    border: 1px solid #363a43;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+    transition: 0.9s;
+}
 
+.menu li {
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #2a2d35;
+}
+
+/* class for javascript */
+.active {
+    background: #23242a;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
 }
