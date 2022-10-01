@@ -97,8 +97,9 @@ function date() {
 
     })
 }
-
 date();
+
+
 
 let windowObjectReference = null; // global variable
 function openRequestedTab(url, windowName) {
@@ -115,3 +116,16 @@ link.addEventListener("click", (event) => {
     openRequestedTab(link.href);
     event.preventDefault();
 }, false);
+
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
