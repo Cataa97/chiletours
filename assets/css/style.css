@@ -16,6 +16,15 @@ body {
 }
 
 
+::before {
+    box-sizing: border-box;
+
+}
+
+::after {
+    box-sizing: border-box;
+}
+
 /* -------------------------------------------- HEADER  --------------------------------------------*/
 
 .header__main {
@@ -277,113 +286,322 @@ body {
     margin-top: 0 !important;
 
 }
-.hero__container_search{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
 
-.hero__container_search-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 0 !important;
+.hero__container_search {
     position: relative;
-    min-width: 0;
-    word-wrap: break-word;
+    display: flex;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #e7eaf3;
+    flex-direction: column;
+    min-width: 0;
     border-radius: 0.3125rem;
+    border: 1px solid #e7eaf3;
+    
+}
+
+.hero__container_search-form{
+    word-wrap: break-word;
+   display: flex;
+    flex: 1 1 auto;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+
+  
+
+.sel {
+
+    color: #3b444f;
+    background-color: #fff !important;
+    border: 0;
+    font-weight: 500;
+    padding-bottom: 14px;
+    z-index: 1;
+    text-align: right;
+    white-space: nowrap;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3125rem;
+    text-transform: none;
+    margin: 0;
+    font-family: inherit;
+    text-transform: none;
 }
 
 
 
 
-/*------------------------dropdown------------------------- */
+
+
+.paraAbajo {
+    border-color: #eaeaea;
+    border-bottom: 1px solid #e7eaf3 !important;
+    font-weight: normal;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    color: #297cbb !important;
+    word-wrap: normal;
+    text-transform: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+
+
+
+/*BLOQUES INFO*/
+
+.container__info {
+    display: block;
+    border-color: #ebf0f7;
+    padding-top: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 0.25rem !important;
+    border-bottom: 1px solid #e7eaf3 !important;
+}
+
+.container__info_main {
+    display: block;
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container__info_main_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container__info_main_row-col {
+    display: block;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container__info_main_row-col_icon {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon::before {
+    line-height: 1;
+    font-size: 3.125rem;
+    color: #297cbb !important;
+    margin-bottom: 1rem !important;
+    margin-right: 1rem !important;
+    font-style: normal;
+
+}
+
+
+.container__info_main_row-col_icon::before {
+    display: block;
+    flex: 1;
+
+}
+
+.container__info_main-h5 {
+    display: block;
+    font-weight: 500 !important;
+    font-size: 1.188rem;
+    color: #3b444f !important;
+    margin-bottom: 0.25rem !important;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container__info_main-p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5;
+    color: #67747c !important;
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+
+/*------------------------ Destinos ------------------------- */
+
+.container_destinos {
+    display: block;
+}
+
+
+.container_destinos_main {
+    display: block;
+    padding-bottom: 2rem !important;
+    padding-top: 2rem !important;
+    max-width: 960px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container_destinos_titulo {
+    width: 50% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem !important;
+}
+
+
+.container_destinos_titulo-h2,
+.section-title {
+    display: block;
+    color: #3b444f;
+    font-size: 1.875rem;
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+}
+
+.section-title::after {
+    display: block;
+    width: 2.5rem;
+    height: 0.125rem;
+    background-color: #297cbb;
+    content: " ";
+    margin: 1.5rem auto 0;
+}
+
+
+.container_destinos_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container_destinos_col {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 1.5rem !important;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.container_destinos_img-big {
+    display: block;
+    /* background-image: url(https://i3.visitchile.com/img/Zone/1/desierto_atacama.jpg); */
+    transition: all .2s ease-in-out;
+    min-height: 21.875rem !important;
+    border-radius: 0.188rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2rem !important;
+    border: 0 !important;
+    position: relative;
+}
+
+.container_destinos_info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+
+}
+
+.container_destinos_info-pos {
+    display: block;
+    position: relative !important;
+}
+
+.container_destinos_info-a {
+    display: block;
+    font-weight: 500 !important;
+    background: #297cbb;
+    padding: 3px 10px !important;
+    width: auto !important;
+    line-height: 31px;
+    font-size: 1.313rem;
+    position: relative;
+    color: #fff !important;
+    margin-bottom: 1rem !important;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.container_destinos_info-a:hover,
+.container_destinos_info-a:focus {
+    background-color: #2980B9;
+
+}
 
 .dropdown {
     position: relative;
-    min-width: 250px;
-    margin: 2rem;
+    display: inline-block;
+
 }
 
-.select {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background: #fff;
-    color: #3b444f;
-    border: 2px #fff solid;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-/* class for javasctipt */
-.select-clicked {
-    border: 2px solid #26489a;
-    box-shadow: 0 0 0.8em #26489a;
-}
-
-.select:hover {
-    background: #fff;
-}
-
-.arrow {
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid white;
-    transition: 0.3s;
-}
-
-.arrow-rotate {
-    transform: rotate(180deg);
-}
-
-.menu {
-    position: absolute;
+.dropdown-content {
     display: none;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    padding: 5px 10px;
-    background: #fff;
-    color: #3b444f;
-    list-style: none;
-    border: 1px solid #363a43;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-    transform: translateX(-50%);
-    opacity: 0;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
     z-index: 1;
-    transition: 0.9s;
+
 }
 
-.menu li {
-    padding: 10px 5px;
-    margin: 5px 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.menu li:hover {
-    background: #2a2d35;
-}
-
-/* class for javascript */
-.active {
-    background: #23242a;
-}
-
-.menu-open {
+.dropdown-content a {
     display: block;
-    opacity: 1;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    color: #fff;
+    padding: 0.375rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+
+}
+
+.dropdown a:hover {}
+
+.show {
+    display: block;
+
 }

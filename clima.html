@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="./assets/css/clima.css" />
+  </head>
+
+  <body>
+    <main>
+        <h1>Buscar ciudad</h1>
+      <div class="contenedor" style="text-align: center">
+        <select id="search" class="sel">
+          <option selected disabled>Elige ciudad</option>
+          <option value="San Pedro">San Pedro de Atacama</option>
+          <option value="Antofagasta">Antofagasta</option>
+          <option value="La Serena">La Serena</option>
+          <option value="Valparaíso">Valparaíso</option>
+          <option value="Santiago">Santiago</option>
+          <option value="Puerto Montt">Puerto Montt</option>
+        </select>
+
+        <div class="clima" id="weather"></div>
+      </div>
+    </main>
+    <script src="./assets/js/clima.js"></script>
+  </body>
+</html>
