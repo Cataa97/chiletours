@@ -35,7 +35,7 @@ dropDowns.forEach((dropDown) => {
 
 function poto() {
     const destinos = document.getElementById("mySelect");
-    const ciudades = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronmía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
+    const ciudades = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronomía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
     ciudades.forEach((a, i) => {
         const imagen = document.createElement("div");
         imagen.setAttribute("class", "container_destinos_col");
@@ -50,26 +50,9 @@ function poto() {
           >
             <div class="container_destinos_info">
               <div class="dropdown">
-                <button
-                  onclick="myFunction()"
-                  class="container_destinos_info-a"
-                >
-                  ${a}
-                </button>
-
-                <div id="myDropdown" class="dropdown-content">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    >Tours</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="#
-                    >Actividades</a
-                  >
-                </div>
-              </div>
+              <form action="./${i}.html">
+              <input class="button" type="submit" value="${a}" />
+          </form>
             </div>
           </div>
         
@@ -86,13 +69,12 @@ poto();
 
 function formulario() {
     const destinosForm = document.getElementById("myForm");
-    const ciudadesForm = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronmía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
+    const ciudadesForm = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronomía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
     ciudadesForm.forEach((a, i) => {
         const formulario = document.createElement("option");
         destinosForm.setAttribute("class", "sel")
         formulario.setAttribute("class", "paraAbajo");
         formulario.text = a;
-       
 
         destinosForm.appendChild(formulario);
 
@@ -101,16 +83,15 @@ function formulario() {
 
 formulario();
 
-
 function date() {
-    const destinosForm = document.getElementById("mydate");
-    const ciudadesForm = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronmía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
+    const destinosForm = document.getElementById("myDate");
+    const ciudadesForm = ['San Pedro de Atacama', 'Isla de Pascua', 'La Serena, playas y astronomía', 'Distrito de Lagos y Volcanes', 'Valparaíso, Santiago y Viñedos', 'Patagonia Norte y Bosque Nativo'];
     ciudadesForm.forEach((a, i) => {
-        const formulario = document.createElement("date");
+        const formulario = document.createElement("option");
         destinosForm.setAttribute("class", "sel")
         formulario.setAttribute("class", "paraAbajo");
         formulario.text = a;
-       
+
 
         destinosForm.appendChild(formulario);
 
@@ -119,4 +100,18 @@ function date() {
 
 date();
 
+let windowObjectReference = null; // global variable
+function openRequestedTab(url, windowName) {
+    if (windowObjectReference === null || windowObjectReference.closed) {
+        windowObjectReference = window.open(url, windowName, popup);
+    } else {
+        windowObjectReference.focus();
+    };
+}
 
+
+const link = document.querySelector("a[target='OpenWindow']");
+link.addEventListener("click", (event) => {
+    openRequestedTab(link.href);
+    event.preventDefault();
+}, false);

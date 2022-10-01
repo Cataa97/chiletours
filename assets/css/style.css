@@ -296,33 +296,44 @@ body {
     min-width: 0;
     border-radius: 0.3125rem;
     border: 1px solid #e7eaf3;
-    
+
+
 }
 
-.hero__container_search-form{
+.hero__container_search-form {
     word-wrap: break-word;
-   display: flex;
+    display: flex;
     flex: 1 1 auto;
     padding: 1rem;
-    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+.icons_search {
+    display: flex;
+    position: inherit;
+    height: 40px;
+    left: -23rem;
+    z-index: 0;
+    top: 50px;
+
+
 }
 
 
-  
 
 .sel {
-
     color: #3b444f;
     background-color: #fff !important;
     border: 0;
     font-weight: 500;
     padding-bottom: 14px;
     z-index: 1;
-    text-align: right;
+    text-align: center;
     white-space: nowrap;
-    padding: 0.9rem 1rem;
+    padding: 0.5rem 0.5px;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1;
     border-radius: 0.3125rem;
     text-transform: none;
     margin: 0;
@@ -355,6 +366,7 @@ body {
 
 
 
+
 /*BLOQUES INFO*/
 
 .container__info {
@@ -379,8 +391,7 @@ body {
 .container__info_main_row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    padding: 50px 0px 50px 0px;
 }
 
 .container__info_main_row-col {
@@ -442,7 +453,7 @@ body {
 }
 
 
-/*------------------------ Destinos ------------------------- */
+/*------------------------ DESTINOS------------------------- */
 
 .container_destinos {
     display: block;
@@ -603,5 +614,292 @@ body {
 
 .show {
     display: block;
+
+}
+
+
+/*------------------------VIDEO MEDIO------------------------- */
+
+.container__video {
+    min-width: 992px;
+    min-height: 600px;
+    display: block;
+    padding-top: 12.5rem !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-image: url(https://i4.visitchile.com/img/Banner/16/main.png); */
+    padding-bottom: 8rem !important;
+}
+
+.container__video_info {
+    display: block;
+    text-align: center !important;
+}
+
+.video_info-1 {
+    display: block;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    font-size: 2.563rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.video_info-2 {
+    display: block;
+    font-weight: 500 !important;
+    font-size: 1.313rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+
+
+}
+
+.video__link {
+    display: inline-block;
+    color: #3b444f;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.video__link_container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    color: #fff !important;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.video__link-icon {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-style: normal;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+/*------------------------CONTACTO------------------------- */
+
+
+.contact__container {
+    padding-top: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__info {
+    display: block;
+    gap: 1rem;
+}
+
+.button {
+    padding-top: 2rem;
+    background-color: #297cbb;
+    border-color: #297cbb;
+    font-size: 1.3rem;
+    height: 54px;
+    min-width: 7rem;
+    border-radius: 3px !important;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.9rem 1rem;
+    line-height: 1.5;
+    text-transform: none;
+    cursor: pointer;
+
+}
+
+.contact__button-icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.contact__form-div {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 4rem;
+}
+
+.contact__form-input {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    padding: 1.5rem;
+    border-radius: .75rem;
+    z-index: 1;
+
+}
+
+.contact__form-tag {
+
+    top: -.75rem;
+    left: 1.25rem;
+    font-size: 1.20rem;
+    padding: .25rem;
+    background-color: white;
+    z-index: 10;
+}
+
+.contact__form-area {
+    height: 11rem;
+}
+
+.contact__form-area textarea {
+    resize: none;
+
+}
+
+
+/*------------------------QUIENES SOMOS ------------------------- */
+
+.about_img {
+    margin: 4rem;
+}
+
+
+
+/* ---------------------------------------CIUDADES ---------------------------------- */
+
+.contenedor_ciudad {
+    display: block;
+    width: min(120rem, 90%);
+    margin: 0 auto;
+}
+
+.ciudad_title {
+    color: #297cbb;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.ciudad_gap-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    height: 43.9rem;
+}
+
+
+.ciudad_imagen {
+    display: block;
+    width: 50%;
+    height: 40rem;
+    object-fit: cover;
+    order-style: none;
+}
+
+.ciudad_parrafo {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.ciudad_boton-volver {
+    display: inline-block;
+    font-weight: 500;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-width: 11.375rem;
+    height: 3.75rem;
+    border-radius: 3px !important;
+    background-color: #297cbb;
+    border-color: #297cbb;
+    text-transform: none;
+    margin: 0;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+
+
+/*------------------------FOOTER------------------------- */
+.containter__footer {
+    display: block;
+    padding-bottom: 2rem !important;
+    padding-top: 2rem !important;
+    background-color: #297cbb;
+    margin-top: 2rem;
+}
+
+
+.container__main {
+    display: block;
+    max-width: 720px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+
+
+.container__main_centrado {
+    display: block !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+
+.container__main_cop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
